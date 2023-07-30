@@ -24,7 +24,7 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                         </div>
                         <div className="label-1">
                             <label className="form-label">Purpose of the test is</label>
-                            <FormControl style={{ width: '323px' }}>
+                            <FormControl style={{ width: isMobileView? '323px':'544px' }}>
                                 {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
                                 <Select
                                     labelId="demo-simple-select-label"
@@ -43,7 +43,7 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                         </div>
                         <div className="label-1">
                             <label className="form-label">Descrption</label>
-                            <FormControl style={{ width: '323px' }}>
+                            <FormControl style={{ width: isMobileView? '323px':'544px' }}>
                                 {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
                                 <Select
                                     labelId="demo-simple-select-label"
@@ -62,7 +62,7 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                         </div>
                         <div className="label-1">
                             <label className="form-label">Descrption</label>
-                            <FormControl style={{ width: '323px', background: 'white' }}>
+                            <FormControl style={{ width: isMobileView? '323px':'544px', background: 'white' }}>
                                 <div className="tags-div">
                                     {skills.map((option, index) => {
                                         return <div className="tags">
@@ -93,7 +93,7 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                                     // }
                                     renderInput={(params) => (
                                         <TextField
-                                            className="form-name"
+                                            className= {isMobileView?"form-name-mobile":"form-name"}
                                             {...params}
                                             // variant="otlined"
                                             placeholder="Type Here"

@@ -888,6 +888,18 @@ background: #FFF;
   border-radius: 8px;
   border: 1px solid var(--system-stroke-2, #DADCE0);
   background: #FFF;
+  width: 544px;
+}
+.form-name-mobile {
+  display: flex;
+  /* height: 50px; */
+  padding: 15px;
+  /* align-items: center; */
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--system-stroke-2, #DADCE0);
+  background: #FFF;
   width: 323px;
 }
 
