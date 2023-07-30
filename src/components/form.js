@@ -20,7 +20,9 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                     <form className="form">
                         <div className="label-1">
                             <label className="form-label">Name of Asessment</label>
-                            <TextField className="form-name" placeholder="Type here" />
+                            <FormControl style={{ width: isMobileView? '323px':'544px' }}>
+                            <TextField className={isMobileView?"form-name-mobile":"form-name"} placeholder="Type here" />
+                            </FormControl>
                         </div>
                         <div className="label-1">
                             <label className="form-label">Purpose of the test is</label>
@@ -104,7 +106,7 @@ const AsessmentForm = ({ open,setOpen,isMobileView }) => {
                         </div>
                         <div className="label-1">
                             <label className="form-label">Duration of Asessment</label>
-                            <TextField className="form-name" placeholder="HH:MM:SS" />
+                            <TextField className={isMobileView?"form-name-mobile":"form-name"} placeholder="HH:MM:SS" />
                         </div>
 
                     </form>
